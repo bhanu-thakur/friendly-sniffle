@@ -1,4 +1,4 @@
 
 #SQL WORK
 
-[Manufacturer](../SQL/Mobile Manufacturer Data Analysis/
+[Manufacturer](../SQL/Mobile Manufacturer Data Analysis/)
