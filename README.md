@@ -6,9 +6,9 @@ Clicking on the links here will take you to specific directory or file according
 
 
 - ### [SQL Server](/friendly-sniffle/SQL)
-  - [Retail Data Analysis](/friendly-sniffle/tree/main/SQL/Retail%20Data%20Analysis)
-  - [Mobile Manufacturer Data Analysis](/friendly-sniffle/tree/main/SQL/Mobile%20Manufacturer%20Data%20Analysis)
-  - [International Debt Statistics](friendly-sniffle/tree/main/SQL/Analyze%20International%20Debt%20Statistics/notebook.ipynb)
+  - [Retail Data Analysis](/friendly-sniffle/SQL/Retail%20Data%20Analysis)
+  - [Mobile Manufacturer Data Analysis](/friendly-sniffle/SQL/Mobile%20Manufacturer%20Data%20Analysis)
+  - [International Debt Statistics](friendly-sniffle/SQL/Analyze%20International%20Debt%20Statistics/notebook.ipynb)
 
 
 - ### [Python](https://github.com/bhanu-thakur/friendly-sniffle/tree/main/Python)
