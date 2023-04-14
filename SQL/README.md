@@ -1,5 +1,5 @@
 
-#SQL WORK
+# SQL WORK
 ## Exploratory Data Analysis
 - [Retail Data Analysis](/SQL/Retail%20Data%20Analysis)
 - [Mobile Manufacturer Data Analysis](/SQL/Mobile%20Manufacturer%20Data%20Analysis)
