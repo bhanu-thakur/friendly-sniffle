@@ -1,7 +1,7 @@
+> ## Full .pbix file can be downloaded from [HERE](https://github.com/bhanu-thakur/friendly-sniffle/raw/main/assets/Power%20BI/Reports/Brazil.pbix)
 
-# POWER BI WORK
-## Exploratory Data Analysis
-- [Retail Data Analysis](/SQL/Retail%20Data%20Analysis)
-- [Mobile Manufacturer Data Analysis](/SQL/Mobile%20Manufacturer%20Data%20Analysis)
-- [Analyze International Debt Statistics](/SQL/Analyze%20International%20Debt%20Statistics/notebook.ipynb)
 
+
+> ### A mini Dashboard for Brazil Travel Data
+
+![image](https://raw.githubusercontent.com/bhanu-thakur/friendly-sniffle/main/assets/Power%20BI/Images/Brazil%20Dashboard.png)
