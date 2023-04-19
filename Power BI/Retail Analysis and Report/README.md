@@ -4,5 +4,5 @@
 
 > ### A Dashboard consisting of KPIs and Charts for a Sales Dataset
 
+![image](https://raw.githubusercontent.com/bhanu-thakur/friendly-sniffle/main/assets/PBI%20Retail.png)
 
-![image](https://user-images.githubusercontent.com/128359060/232868295-03d71482-039d-4cae-9eb7-9d63a123bd2e.png)
