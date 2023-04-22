@@ -41,13 +41,9 @@ WHERE
 >Output
 
 
-| Top_5_Manufacturers | Model_Name | Total_Sales | Quantity_Sold Avg_price_per_quantity |        |
-|---------------------|------------|-------------|--------------------------------------|--------|
-| Samsung             | Galaxy S8  | 3325.00     | 5                                    | 665.00 |
-| Apple               | iPhone 7   | 8872.00     | 16                                   | 554.50 |
-| Apple               | iPhone 6   | 8561.00     | 17                                   | 503.59 |
-| One Plus            | OnePlus 6T | 6477.00     | 13                                   | 498.23 |
-| Apple               | iPhone 5   | 3673.00     | 8                                    | 459.13 |
+| Required_Revenue |
+|------------------|
+| 494023.4         |
 
 
 
@@ -105,14 +101,13 @@ ON t1.prod_subcat = t2.prod_subcat
 >Output
 
 
-| Customer_Name    | Average_Sales |
-|------------------|---------------|
-| Laurel Reitler   | 1528.00       |
-| Lettie Isenhower | 870.00        |
-| Moon Parlato     | 823.50        |
-| Danica Bruschke  | 760.00        |
-| Celeste Korando  | 613.00        |
-| Shawna Palaspas  | 569.00        |
+| Top 5 Sub Categories in Terms of Sales | Total_Sales | Percentage_Sales | Total_Returns | Percentage_Returns |
+|----------------------------------------|-------------|------------------|---------------|--------------------|
+| Women                                  | 7020080.41  | 14.45            | -852897.7     | 1.76               |
+| Mens                                   | 6905870.83  | 14.22            | -733517.85    | 1.51               |
+| Kids                                   | 4806698.53  | 9.89             | -550611.65    | 1.13               |
+| Mobiles                                | 2508648.57  | 5.16             | -259945.77    | 0.54               |
+| Fiction                                | 2492901.17  | 5.13             | -260650.73    | 0.54               |
 
 
 
@@ -140,13 +135,10 @@ Order by Total DESC)a2
 >Output
 
 
-| Model_Name   | ZipCode | State    | Num_of_Transactions |
-|--------------|---------|----------|---------------------|
-| 3310 (3330)  | 21163   | Maryland | 1                   |
-| 5230         | 21163   | Maryland | 3                   |
-| 6230 (6233)  | 21163   | Maryland | 1                   |
-| C139         | 21163   | Maryland | 2                   |
-| Droid Bionic | 21163   | Maryland | 2                   |
+| Description                                  | Store_type | Total    |
+|----------------------------------------------|------------|----------|
+| Maximum Sales is from the store :            | e-Shop     | 22185613 |
+| Maximum Quantity overall is from the store : | e-Shop     | 22763    |
 
 
 
@@ -177,9 +169,9 @@ ORDER BY Total_Returns
 >Output
 
 
-| Manufacturer_Name | Model_Name | Unit_price |
-|-------------------|------------|------------|
-| Nokia             | 3210       | 14.00      |
+| Category | Total_Returns |
+|----------|---------------|
+| Books    | -134408.9     |
 
 
 
@@ -219,16 +211,29 @@ ORDER BY prod_cat
 >Output
 
 
-| State             |
-|-------------------|
-| Arizona           |
-| California        |
-| Delhi             |
-| Haryana           |
-| Karnataka         |
-| Maharashtra       |
-| Maryland          |
-
+| prod_cat         | prod_subcat         | Average_Revenue | Total_Revenue |
+|------------------|---------------------|-----------------|---------------|
+| Books            | Academic            | 2125.49         | 2055344.43    |
+| Books            | Children            | 2136.67         | 2211451.18    |
+| Books            | Comics              | 2037.68         | 2100848.41    |
+| Books            | DIY                 | 2108.37         | 2085180.6     |
+| Books            | Fiction             | 2140.22         | 2232250.44    |
+| Books            | Non-Fiction         | 2129.1          | 2137620.47    |
+| Clothing         | Kids                | 2136.6          | 2110960.06    |
+| Clothing         | Mens                | 2128.26         | 2058030.8     |
+| Clothing         | Women               | 2071.79         | 2082147.33    |
+| Electronics      | Audio and video     | 2247.96         | 2140058.1     |
+| Electronics      | Cameras             | 2165.88         | 2133390.59    |
+| Electronics      | Computers           | 2181.75         | 2090116.61    |
+| Electronics      | Mobiles             | 2181.09         | 2248702.79    |
+| Electronics      | Personal Appliances | 2170.98         | 2110196.56    |
+| Footwear         | Kids                | 2125.99         | 2145126.81    |
+| Footwear         | Mens                | 2112.06         | 1989564.94    |
+| Footwear         | Women               | 1989.58         | 2085083.38    |
+| Home and kitchen | Bath                | 2059.85         | 2107226.39    |
+| Home and kitchen | Furnishing          | 2084.01         | 2098595.35    |
+| Home and kitchen | Kitchen             | 2008.96         | 2083289.92    |
+| Home and kitchen | Tools               | 2024.37         | 2149882.8     |
 
 
 
@@ -252,9 +257,11 @@ ORDER BY Average_Revenue DESC
 >Output
 
 
-| Manufacturer_Name | State   | Total_Quantity_Sold |
-|-------------------|---------|---------------------|
-| Samsung           | Arizona | 18                  |
+| prod_cat    | Average_Revenue |
+|-------------|-----------------|
+| Electronics | 2189.15         |
+| Books       | 2112.82         |
+| Clothing    | 2111.87         |
 
 
 
@@ -282,10 +289,13 @@ ORDER BY Total_Revenue DESC;
 >Output
 
 
-| Year_Sales | Manufacturer_Name | Ranking |
-|------------|-------------------|---------|
-| 2010       | Apple             | 2       |
-| 2009       | Samsung           | 2       |
+| prod_cat    | prod_subcat         | Total_Revenue |
+|-------------|---------------------|---------------|
+| Electronics | Mobiles             | 1192413.25    |
+| Electronics | Cameras             | 1172702.34    |
+| Electronics | Audio and video     | 1138983.19    |
+| Electronics | Personal Appliances | 1107593.5     |
+| Electronics | Computers           | 1091417.54    |
 
 
 
@@ -312,9 +322,8 @@ WHERE
 >Output
 
 
-| Manufacturer_Name | State   | Total_Quantity_Sold |
-|-------------------|---------|---------------------|
-| Samsung           | Arizona | 18                  |
+| Combines Revenue is = 3409559.52 | prod_subcat |
+|----------------------------------|-------------|
 
 
 
@@ -341,9 +350,8 @@ HAVING COUNT(cust_id)>10
 >Output
 
 
-| Question                                      | Answer |
-|-----------------------------------------------|--------|
-| Company that sold in 2010 but not in 2009 HTC | Apple  |
+| Customers with Transactions > 10 excluding returns | 6 |
+|----------------------------------------------------|---|
 
 
 
@@ -368,23 +376,8 @@ WHERE prod_cat IN ('Electronics', 'Books')
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
-| Angella Cetta     | 2010                           | 173.00 | -127.00        | -42.33 %         | 1 |
-| Arlene Klusman    | 2004                           | 665.00 | NULL           | 0.00 %           | 1 |
-| Arlene Klusman    | 2006                           | 415.00 | -250.00        | -37.59 %         | 1 |
-| Arlene Klusman    | 2008                           | 347.00 | -68.00         | -16.38 %         | 1 |
-| Arlene Klusman    | 2010                           | 476.00 | 129.00         | 37.17 %          | 1 |
-| Arlette Honeywell | 2004                           | 189.00 | NULL           | 0.00 %           | 1 |
-| Arlette Honeywell | 2005                           | 269.00 | 80.00          | 42.32 %          | 1 |
-| Arlette Honeywell | 2006                           | 233.00 | -36.00         | -13.38 %         | 1 |
-| Arlette Honeywell | 2007                           | 76.67  | -156.3334      | -67.09 %         | 1 |
-| Arlette Honeywell | 2008                           | 502.00 | 425.3334       | 554.78 %         | 1 |
-| Bobbye Rhym       | 2005                           | 319.00 | NULL           | 0.00 %           | 1 |
+| Net total revenue is = | 23545160.21 |
+|------------------------|-------------|
 
 
 
@@ -406,12 +399,9 @@ ORDER BY Maximum_Quantity DESC
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
+| prod_cat | Maximum_Quantity |
+|----------|------------------|
+| Books    | 14669            |
 
 
 
@@ -430,23 +420,9 @@ GROUP BY prod_cat_info.prod_cat
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
-| Angella Cetta     | 2010                           | 173.00 | -127.00        | -42.33 %         | 1 |
-| Arlene Klusman    | 2004                           | 665.00 | NULL           | 0.00 %           | 1 |
-| Arlene Klusman    | 2006                           | 415.00 | -250.00        | -37.59 %         | 1 |
-| Arlene Klusman    | 2008                           | 347.00 | -68.00         | -16.38 %         | 1 |
-| Arlene Klusman    | 2010                           | 476.00 | 129.00         | 37.17 %          | 1 |
-| Arlette Honeywell | 2004                           | 189.00 | NULL           | 0.00 %           | 1 |
-| Arlette Honeywell | 2005                           | 269.00 | 80.00          | 42.32 %          | 1 |
-| Arlette Honeywell | 2006                           | 233.00 | -36.00         | -13.38 %         | 1 |
-| Arlette Honeywell | 2007                           | 76.67  | -156.3334      | -67.09 %         | 1 |
-| Arlette Honeywell | 2008                           | 502.00 | 425.3334       | 554.78 %         | 1 |
-| Bobbye Rhym       | 2005                           | 319.00 | NULL           | 0.00 %           | 1 |
+| prod_cat | Number of sub categories |
+|----------|--------------------------|
+| Books    | 6                        |
 
 
 
@@ -465,23 +441,9 @@ ORDER BY count(city_code) DESC
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
-| Angella Cetta     | 2010                           | 173.00 | -127.00        | -42.33 %         | 1 |
-| Arlene Klusman    | 2004                           | 665.00 | NULL           | 0.00 %           | 1 |
-| Arlene Klusman    | 2006                           | 415.00 | -250.00        | -37.59 %         | 1 |
-| Arlene Klusman    | 2008                           | 347.00 | -68.00         | -16.38 %         | 1 |
-| Arlene Klusman    | 2010                           | 476.00 | 129.00         | 37.17 %          | 1 |
-| Arlette Honeywell | 2004                           | 189.00 | NULL           | 0.00 %           | 1 |
-| Arlette Honeywell | 2005                           | 269.00 | 80.00          | 42.32 %          | 1 |
-| Arlette Honeywell | 2006                           | 233.00 | -36.00         | -13.38 %         | 1 |
-| Arlette Honeywell | 2007                           | 76.67  | -156.3334      | -67.09 %         | 1 |
-| Arlette Honeywell | 2008                           | 502.00 | 425.3334       | 554.78 %         | 1 |
-| Bobbye Rhym       | 2005                           | 319.00 | NULL           | 0.00 %           | 1 |
+| city_code | Customers |
+|-----------|-----------|
+| 3         | 595       |
 
 
 
@@ -502,23 +464,10 @@ order by [Total Customers] DESC
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
-| Angella Cetta     | 2010                           | 173.00 | -127.00        | -42.33 %         | 1 |
-| Arlene Klusman    | 2004                           | 665.00 | NULL           | 0.00 %           | 1 |
-| Arlene Klusman    | 2006                           | 415.00 | -250.00        | -37.59 %         | 1 |
-| Arlene Klusman    | 2008                           | 347.00 | -68.00         | -16.38 %         | 1 |
-| Arlene Klusman    | 2010                           | 476.00 | 129.00         | 37.17 %          | 1 |
-| Arlette Honeywell | 2004                           | 189.00 | NULL           | 0.00 %           | 1 |
-| Arlette Honeywell | 2005                           | 269.00 | 80.00          | 42.32 %          | 1 |
-| Arlette Honeywell | 2006                           | 233.00 | -36.00         | -13.38 %         | 1 |
-| Arlette Honeywell | 2007                           | 76.67  | -156.3334      | -67.09 %         | 1 |
-| Arlette Honeywell | 2008                           | 502.00 | 425.3334       | 554.78 %         | 1 |
-| Bobbye Rhym       | 2005                           | 319.00 | NULL           | 0.00 %           | 1 |
+| Gender | Total Customers |
+|--------|-----------------|
+| M      | 2892            |
+| F      | 2753            |
 
 
 
@@ -544,20 +493,5 @@ where Ranking = 1
 >Output
 
 
-| Customer_Name     | Year_of_Purchase Average_Spend | Change | percent_change | Average_Quantity |   |
-|-------------------|--------------------------------|--------|----------------|------------------|---|
-| Alease Buemi      | 2007                           | 436.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2003                           | 170.00 | NULL           | 0.00 %           | 1 |
-| Angella Cetta     | 2004                           | 282.50 | 112.50         | 66.17 %          | 1 |
-| Angella Cetta     | 2007                           | 300.00 | 17.50          | 6.19 %           | 1 |
-| Angella Cetta     | 2010                           | 173.00 | -127.00        | -42.33 %         | 1 |
-| Arlene Klusman    | 2004                           | 665.00 | NULL           | 0.00 %           | 1 |
-| Arlene Klusman    | 2006                           | 415.00 | -250.00        | -37.59 %         | 1 |
-| Arlene Klusman    | 2008                           | 347.00 | -68.00         | -16.38 %         | 1 |
-| Arlene Klusman    | 2010                           | 476.00 | 129.00         | 37.17 %          | 1 |
-| Arlette Honeywell | 2004                           | 189.00 | NULL           | 0.00 %           | 1 |
-| Arlette Honeywell | 2005                           | 269.00 | 80.00          | 42.32 %          | 1 |
-| Arlette Honeywell | 2006                           | 233.00 | -36.00         | -13.38 %         | 1 |
-| Arlette Honeywell | 2007                           | 76.67  | -156.3334      | -67.09 %         | 1 |
-| Arlette Honeywell | 2008                           | 502.00 | 425.3334       | 554.78 %         | 1 |
-| Bobbye Rhym       | 2005                           | 319.00 | NULL           | 0.00 %           | 1 |
+| e-Shop |
+|--------|
