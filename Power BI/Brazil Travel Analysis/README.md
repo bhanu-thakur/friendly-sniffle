@@ -4,4 +4,4 @@
 
 > ### A mini Dashboard for Brazil Travel Data
 
-![image](https://raw.githubusercontent.com/bhanu-thakur/friendly-sniffle/main/assets/Power%20BI/Images/Brazil%20Dashboard.png)
+![image](https://raw.githubusercontent.com/bhanu-thakur/friendly-sniffle/main/assets/Power%20BI/Images/Brazil/Brazil%20Dashboard.png)
