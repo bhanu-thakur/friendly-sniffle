@@ -1,4 +1,4 @@
-> ## Full .pbix file can be downloaded from [HERE](https://github.com/bhanu-thakur/friendly-sniffle/blob/main/assets/Power%20BI/Reports/Sales.pbix?raw=true)
+# View live dashboard [HERE](https://app.powerbi.com/view?r=eyJrIjoiZDA1ZTljYTItMjdkMy00YmY3LWI1ZGUtN2EwM2IwZTg3ZWVhIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9) (use page navigation in bottom to view next pages)
 
 
 
