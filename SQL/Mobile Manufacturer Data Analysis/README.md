@@ -2,7 +2,7 @@
 ## Mobile Manufacturer EDA Assignment by AnalytixLabs Noida
 
 ```
->Q1. List all the states in which we have customers who have bought cellphones from 2005 till today.
+Q1. List all the states in which we have customers who have bought cellphones from 2005 till today.
 ```
 
 ```sql
